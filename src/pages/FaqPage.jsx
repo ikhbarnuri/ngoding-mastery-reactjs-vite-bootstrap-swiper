@@ -1,9 +1,9 @@
-import Faq from "../components/Faq.jsx";
+import FaqComponent from "../components/FaqComponent.jsx";
 
 const FaqPage = () => {
     return (
         <div>
-            <Faq/>
+            <FaqComponent/>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import NavbarComponent from "./components/NavbarComponent.jsx";
+import FooterComponent from "./components/FooterComponent.jsx";
 
 import HomePage from "./pages/HomePage.jsx";
 import KelasPage from "./pages/KelasPage.jsx";
@@ -13,7 +13,7 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 function App() {
     return (
         <div>
-            <Navbar/>
+            <NavbarComponent/>
             <Routes>
                 <Route path="/" Component={HomePage}/>
                 <Route path="/kelas" Component={KelasPage}/>
@@ -22,7 +22,7 @@ function App() {
                 <Route path="/syarat-ketentuan" Component={SyaratKetentuanPage}/>
                 <Route path="*" Component={NotFoundPage}/>
             </Routes>
-            <Footer/>
+            {/*<FooterComponent/>*/}
         </div>
     )
 }
