@@ -1,7 +1,7 @@
 const KelasPage = () => {
     return (
         <div>
-
+            Kelas
         </div>
     );
 };

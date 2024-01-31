@@ -1,7 +1,7 @@
 const SyaratKetentuanPage = () => {
     return (
         <div>
-
+            SyaratKetentuanPage
         </div>
     );
 };
