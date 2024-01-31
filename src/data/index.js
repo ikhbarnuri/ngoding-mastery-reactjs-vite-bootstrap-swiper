@@ -51,7 +51,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Character Illustration with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "1300",
   },
   {
@@ -64,7 +64,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "UI UX Website Design for Beginner with Figma",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "1600",
   },
   {
@@ -77,7 +77,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Web Developer Bootstrap 5",
     price: "Rp. 280.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "1900",
   },
   {
@@ -90,7 +90,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Logo with Adobe Illustrator",
     price: "Rp. 420.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "",
   },
   {
@@ -103,7 +103,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "3D Modelling for Beginner with 3D Blender",
     price: "Rp. 380.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "300",
   },
   {
@@ -116,7 +116,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Icon Design with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "600",
   },
   {
@@ -129,7 +129,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Design Vektor with Corel Draw CC for Beginner",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "",
   },
   {
@@ -142,7 +142,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "UI UX Design with Adobe XD for Beginner",
     price: "Rp. 400.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "300",
   },
   {
@@ -155,7 +155,7 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Mastering Mobile Developer with Flutter",
     price: "Rp. 320.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "600",
   },
 ];
@@ -171,7 +171,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Character Illustration with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "",
   },
   {
@@ -184,7 +184,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "UI UX Website Design for Beginner with Figma",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "200",
   },
   {
@@ -197,7 +197,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Web Developer Bootstrap 5",
     price: "Rp. 280.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "400",
   },
   {
@@ -210,7 +210,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Logo with Adobe Illustrator",
     price: "Rp. 420.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "",
   },
   {
@@ -223,7 +223,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "3D Modelling for Beginner with 3D Blender",
     price: "Rp. 380.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "200",
   },
   {
@@ -236,7 +236,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Icon Design with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli KelasPage",
     delay: "400",
   },
 ];
@@ -398,7 +398,7 @@ export const faq = [
   {
     id: 8,
     eventKey: 7,
-    title: "Apakah boleh ganti Kelas ketika sudah Membeli?",
+    title: "Apakah boleh ganti KelasPage ketika sudah Membeli?",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
   },
 ];
