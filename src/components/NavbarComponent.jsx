@@ -27,7 +27,7 @@ const NavbarComponent = () => {
                 <Navbar.Brand href="#home" className="fs-3 fw-bold">Ngoding</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto text-center ">
+                    <Nav className="mx-auto text-center">
                         {navLinks.map((navLink) => (
                             <div className="nav-link" key={navLink.id}>
                                 <NavLink to={navLink.path}
