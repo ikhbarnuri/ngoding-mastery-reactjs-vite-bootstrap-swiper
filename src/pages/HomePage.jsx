@@ -1,17 +1,25 @@
 import {Col, Container, Row} from "react-bootstrap";
 import HeroImage from "../assets/img/hero.png"
 
-import {kelasTerbaru} from "../data/index.js";
+import {kelasTerbaru, dataSwiper} from "../data/index.js";
 import {useNavigate} from "react-router-dom";
+
+// Import Swiper React components
+import {Swiper, SwiperSlide} from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Pagination} from "swiper/modules";
 
 const HomePage = () => {
     const navigate = useNavigate();
 
     return (
         <div className="homepage">
-            <header className="w-100 min-vh-100 pt-5">
+            <header className="w-100 min-vh-100">
                 <Container>
-                    <Row className="header-box d-flex align-items-center">
+                    <Row className="header-box d-flex align-items-center pt-lg-5">
                         <Col lg={6}>
                             <h1 className="mb-4">Temukan <br/> <span>Bakat Kreatifmu</span> <br/> Bersama Kami!</h1>
                             <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloribus
@@ -38,7 +46,7 @@ const HomePage = () => {
                     </Row>
                     <Row>
                         {kelasTerbaru.map((kelas) => (
-                            <Col key={kelas.id}>
+                            <Col key={kelas.id} className="shadow rounded">
                                 <img src={kelas.image} alt="unsplash.com" className="w-100 mb-5 rounded-top"/>
                                 <div className="star px-3 mb-2">
                                     <i className={kelas.star1}></i>
@@ -65,8 +73,60 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </div>
+            <div className="testimonial py-5">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1 className="text-center fw-bold my-5">Testimonial</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                },
+                                992: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                1200: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                }
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                        >
+                            {dataSwiper.map(data => (
+                                <SwiperSlide key={data.id} className="shadow-sm">
+                                    <p className="desc">{data.desc}</p>
+                                    <div className="people">
+                                        <img src={data.image} alt=""/>
+                                        <div className="">
+                                            <h5 className="mb-1">{data.name}</h5>
+                                            <p className="m-0 fw-bold">{data.skill}</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </Row>
+                </Container>
+            </div>
         </div>
-    );
+    )
+        ;
 };
 
 export default HomePage;
