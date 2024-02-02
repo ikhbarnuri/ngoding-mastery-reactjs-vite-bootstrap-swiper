@@ -27,7 +27,9 @@ const HomePage = () => {
                                 fuga
                                 necessitatibus
                                 quis tenetur. Praesentium?</p>
-                            <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2">Lihat Kelas</button>
+                            <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2"
+                                    onClick={() => navigate("/kelas")}>Lihat Kelas
+                            </button>
                             <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo
                             </button>
                         </Col>
