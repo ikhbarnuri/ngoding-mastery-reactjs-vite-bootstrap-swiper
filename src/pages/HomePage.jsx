@@ -11,6 +11,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import {Pagination} from "swiper/modules";
+import FaqComponent from "../components/FaqComponent.jsx";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -124,6 +125,9 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </div>
+
+            {/*  Section FAQ  */}
+            <FaqComponent/>
         </div>
     )
         ;
