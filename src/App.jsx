@@ -22,7 +22,7 @@ function App() {
                 <Route path="/syarat-ketentuan" Component={SyaratKetentuanPage}/>
                 <Route path="*" Component={NotFoundPage}/>
             </Routes>
-            {/*<FooterComponent/>*/}
+            <FooterComponent/>
         </div>
     )
 }
