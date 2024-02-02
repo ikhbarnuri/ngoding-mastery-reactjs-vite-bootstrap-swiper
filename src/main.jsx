@@ -6,6 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./dist/css/main.css"
 import "animate.css"
 
+import AOS from 'aos';
+import "aos/dist/aos.css"
+
+AOS.init();
+
 import {BrowserRouter} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 

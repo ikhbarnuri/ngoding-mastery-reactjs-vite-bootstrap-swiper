@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import {Pagination} from "swiper/modules";
 import FaqComponent from "../components/FaqComponent.jsx";
+import data from "bootstrap/js/src/dom/data.js";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -54,7 +55,8 @@ const HomePage = () => {
                     </Row>
                     <Row>
                         {kelasTerbaru.map((kelas) => (
-                            <Col key={kelas.id} className="shadow rounded">
+                            <Col key={kelas.id} className="shadow rounded" data-aos="fade-up" data-aos-duration="1000"
+                                 data-aos-delay={kelas.delay}>
                                 <img src={kelas.image} alt="unsplash.com" className="w-100 mb-5 rounded-top"/>
                                 <div className="star px-3 mb-2">
                                     <i className={kelas.star1}></i>
@@ -72,7 +74,7 @@ const HomePage = () => {
                         ))}
                     </Row>
                     <Row>
-                        <Col className="text-center">
+                        <Col className="text-center" data-aos="fade-up" data-aos-duration="1000">
                             <button className="btn btn-success rounded-5" onClick={() => navigate("/kelas")}>
                                 Lihat Semua Kelas
                                 <i className="fa-solid fa-chevron-right ms-3"></i>
