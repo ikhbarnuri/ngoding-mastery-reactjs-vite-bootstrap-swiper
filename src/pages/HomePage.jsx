@@ -17,7 +17,7 @@ const HomePage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="homepage">
+        <section className="homepage">
             <header className="w-100 min-vh-100">
                 <Container>
                     <Row className="header-box d-flex align-items-center pt-lg-5">
@@ -128,7 +128,7 @@ const HomePage = () => {
 
             {/*  Section FAQ  */}
             <FaqComponent/>
-        </div>
+        </section>
     )
         ;
 };
